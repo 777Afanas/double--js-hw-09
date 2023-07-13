@@ -5,7 +5,7 @@ import 'flatpickr/dist/flatpickr.min.css';
 let selectedDate = null;
 let timerId = null;
 
-<<<<<<< Updated upstream
+
 const refs = {
   clockFace: document.querySelector('#datetime-picker'),
   startBtn: document.querySelector('button[data-start]'),
@@ -13,28 +13,29 @@ const refs = {
   hoursField: document.querySelector('span[data-hours]'),
   minutesField: document.querySelector('span[data-minutes]'),
   secondsField: document.querySelector('span[data-seconds]'),
-=======
+}
+
 startBtn.disabled = true;
 
 // flatpickr(test, options);
 
-const options = {
-    enableTime: true,
-    time_24hr: true,
-    defaultDate: new Date(),
-    minuteIncrement: 1,
-    onClose(selectedDates) {
-      // console.log(selectedDates[0].getTime());
-      // console.log(options.defaultDate.getTime());
+// const options = {
+//     enableTime: true,
+//     time_24hr: true,
+//     defaultDate: new Date(),
+//     minuteIncrement: 1,
+//     onClose(selectedDates) {
+//       // console.log(selectedDates[0].getTime());
+//       // console.log(options.defaultDate.getTime());
 
-      if (selectedDates[0] < new Date()) {
-        alert("Please choose a date in the future");
-      }
-      startBtn.disabled = false;
+//       if (selectedDates[0] < new Date()) {
+//         alert("Please choose a date in the future");
+//       }
+//       startBtn.disabled = false;
 
-    },
->>>>>>> Stashed changes
-};
+//     },
+
+// };
 
 refs.startBtn.disabled = true;
 
