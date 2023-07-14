@@ -16,12 +16,10 @@ function handleSubmit(e) {
   for (position = 1; position <= amount; position += 1) { 
 
     createPromise(position, delay)  
-  .then(({ position, delay }) => {
-    // console.log(`✅ Fulfilled promise ${position} in ${delay}ms`);
+  .then(({ position, delay }) => {     
     Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
   })
-  .catch(({ position, delay }) => {
-    // console.log(`❌ Rejected promise ${position} in ${delay}ms`);
+  .catch(({ position, delay }) => {   
     Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
   }); 
     delay += step;  
