@@ -5,7 +5,6 @@ import 'flatpickr/dist/flatpickr.min.css';
 let selectedDate = null;
 let timerId = null;
 
-
 const refs = {
   clockFace: document.querySelector('#datetime-picker'),
   startBtn: document.querySelector('button[data-start]'),
@@ -14,10 +13,6 @@ const refs = {
   minutesField: document.querySelector('span[data-minutes]'),
   secondsField: document.querySelector('span[data-seconds]'),
 }
-
-startBtn.disabled = true;
-
-
 
 refs.startBtn.disabled = true;
 
@@ -40,8 +35,6 @@ const options = {
 };
 
 flatpickr(refs.clockFace, options);
-
-
 
 const timer = {
   isActive: false,
