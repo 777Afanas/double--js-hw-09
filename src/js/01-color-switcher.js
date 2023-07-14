@@ -22,6 +22,7 @@ const stopClick = () => {
     refs.startBtn.disabled = false;
 }
 
+
 refs.stopBtn.addEventListener("click", stopClick);
 
 function getRandomHexColor() {
